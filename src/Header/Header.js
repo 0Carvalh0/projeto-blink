@@ -17,7 +17,7 @@ function Header() {
       <div id="cantoDireito">
         <div id="nome">
           <img id="perfil" src={Perfil001} />
-          <a href="#">Nome</a>
+          <a href="#">Perfil</a>
         </div>
         <div id="inicio">
           <a href="#">Inicio</a>
