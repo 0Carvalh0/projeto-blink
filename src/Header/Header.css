@@ -112,6 +112,16 @@ header #nome,
   text-align: center;
 }
 
+header .fa-solid {
+  color: var(--cor05);
+}
+
+header #cantoDireito .fa-solid:hover {
+  transform: scale(1.08);
+
+  cursor: pointer;
+}
+
 header .header__settings {
   padding: 2px;
   border-radius: 5px;
