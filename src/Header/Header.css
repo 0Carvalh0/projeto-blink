@@ -1,0 +1,62 @@
+header {
+  background-color: var(--cor04);
+  color: #fff;
+  padding: 20px 20px 5px 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header img {
+  width: 40px;
+}
+
+header #cantoDireito {
+  display: flex;
+  align-items: center;
+}
+
+header #cantoDireito > div {
+  display: flex;
+  justify-content: center;
+  margin: 0px 4px;
+}
+
+header #cantoDireito > div#nome > p {
+  margin-left: 5px;
+}
+
+header #cantoDireito #nome::after {
+  content: '';
+  background-color: var(--cor05);
+  width: 2px;
+  height: 20px;
+  margin-left: 4px;
+}
+
+header #cantoDireito #inicio::after {
+  content: '';
+  background-color: var(--cor05);
+  width: 2px;
+  height: 20px;
+  margin-left: 4px;
+}
+
+header #cantoDireito #amigos::after {
+  content: '';
+  background-color: var(--cor05);
+  width: 2px;
+  height: 20px;
+  margin-left: 4px;
+}
+
+header img#perfil {
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+header #nome, #inicio, #amigos {
+  display: flex;
+  align-items: center;
+}

@@ -6,25 +6,25 @@ import Perfil001 from "../images/logo001-pequena.png";
 function Header() {
   return (
     <header>
-      <div>
+      <div id="cantoEsquerdo">
         <img src={Logo001} />
         <input type="text" placeholder="Buscar"></input>
         <label className="fa-solid fa-magnifying-glass"></label>
       </div>
 
-      <div>
-        <div>
-          <img src={Perfil001} />
+      <div id="cantoDireito">
+        <div id="nome">
+          <img id="perfil" src={Perfil001} />
           <p>Nome</p>
         </div>
-        <div>
+        <div id="inicio">
           <p>Inicio</p>
         </div>
-        <div>
+        <div id="amigos">
           <p>Achar Amigos</p>
         </div>
-        <span className="fa-solid fa-user-group"></span>
-        <span className="fa-solid fa-gear"></span>
+        <div className="fa-solid fa-user-group"></div>
+        <div className="fa-solid fa-gear"></div>
       </div>
     </header>
   );
