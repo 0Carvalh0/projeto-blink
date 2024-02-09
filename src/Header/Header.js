@@ -26,7 +26,10 @@ function Header() {
           <a href="#">Achar Amigos</a>
         </div>
         <div className="fa-solid fa-user-group"></div>
-        <div className="fa-solid fa-gear"></div>
+        <div className="header__settings">
+          <div className="fa-solid fa-gear"></div>
+          <div className="fa-solid fa-caret-down"></div>
+        </div>
       </div>
     </header>
   );

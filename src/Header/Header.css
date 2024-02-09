@@ -99,15 +99,26 @@ header #cantoDireito #amigos::after {
   margin-left: 4px;
 }
 
-header img#perfil {
-  border-radius: 50%;
-  background-color: #fff;
-}
-
 header #nome,
 #inicio,
 #amigos {
   display: flex;
   align-items: center;
   text-align: center;
+}
+
+header .header__settings {
+  padding: 2px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  border: 2px solid transparent;
+}
+
+header .header__settings .fa-solid:first-child {
+  margin-right: 5px;
+}
+
+img#perfil {
+  border-radius: 50%;
+  background-color: #fff;
 }
