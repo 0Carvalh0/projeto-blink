@@ -8,20 +8,22 @@ function Header() {
     <header>
       <div id="cantoEsquerdo">
         <img src={Logo001} />
-        <input type="text" placeholder="Buscar"></input>
-        <label className="fa-solid fa-magnifying-glass"></label>
+        <div className="header__input">
+          <input type="text" placeholder="Buscar"></input>
+          <label className="fa-solid fa-magnifying-glass"></label>
+        </div>
       </div>
 
       <div id="cantoDireito">
         <div id="nome">
           <img id="perfil" src={Perfil001} />
-          <p>Nome</p>
+          <a href="#">Nome</a>
         </div>
         <div id="inicio">
-          <p>Inicio</p>
+          <a href="#">Inicio</a>
         </div>
         <div id="amigos">
-          <p>Achar Amigos</p>
+          <a href="#">Achar Amigos</a>
         </div>
         <div className="fa-solid fa-user-group"></div>
         <div className="fa-solid fa-gear"></div>

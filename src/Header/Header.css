@@ -12,6 +12,43 @@ header img {
   width: 40px;
 }
 
+header #cantoEsquerdo {
+  display: flex;
+  align-items: center;
+  width: 50%;
+}
+
+header #cantoEsquerdo .header__input {
+  background-color: #fff;
+  margin-left: 10px;
+  padding: 4px;
+  border-radius: 10px 5px 5px 10px;
+  width: 400px;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+header #cantoEsquerdo .header__input:hover {
+  transform: scale(1.02);
+  transition: all ease 0.2s;
+}
+
+header #cantoEsquerdo .header__input input {
+  background-color: transparent;
+  border: none;
+  width: 100%;
+}
+
+header #cantoEsquerdo .header__input input:focus {
+  outline: none;
+  border: none;
+}
+
+header #cantoEsquerdo .header__input label {
+  color: var(--cor04);
+}
+
 header #cantoDireito {
   display: flex;
   align-items: center;
@@ -23,12 +60,23 @@ header #cantoDireito > div {
   margin: 0px 4px;
 }
 
-header #cantoDireito > div#nome > p {
+header #cantoDireito div a {
+  text-decoration: none;
+  color: #fff;
+}
+
+header #cantoDireito div a:hover {
+  transform: scale(1.08);
+  text-decoration: underline;
+  transition: all ease 0.3s;
+}
+
+header #cantoDireito > div#nome > a {
   margin-left: 5px;
 }
 
 header #cantoDireito #nome::after {
-  content: '';
+  content: "";
   background-color: var(--cor05);
   width: 2px;
   height: 20px;
@@ -36,7 +84,7 @@ header #cantoDireito #nome::after {
 }
 
 header #cantoDireito #inicio::after {
-  content: '';
+  content: "";
   background-color: var(--cor05);
   width: 2px;
   height: 20px;
@@ -44,7 +92,7 @@ header #cantoDireito #inicio::after {
 }
 
 header #cantoDireito #amigos::after {
-  content: '';
+  content: "";
   background-color: var(--cor05);
   width: 2px;
   height: 20px;
@@ -56,7 +104,10 @@ header img#perfil {
   background-color: #fff;
 }
 
-header #nome, #inicio, #amigos {
+header #nome,
+#inicio,
+#amigos {
   display: flex;
   align-items: center;
+  text-align: center;
 }
