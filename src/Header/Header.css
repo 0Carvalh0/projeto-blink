@@ -72,6 +72,7 @@ header #cantoDireito div a {
 
 header #cantoDireito div a:hover {
   transform: scale(1.08);
+  color: var(--cor03);
   text-decoration: underline;
   transition: all ease 0.3s;
 }
@@ -118,6 +119,7 @@ header .fa-solid {
 
 header #cantoDireito .fa-solid:hover {
   transform: scale(1.08);
+  color: var(--cor03);
 
   cursor: pointer;
 }
