@@ -1,0 +1,14 @@
+main {
+  position: absolute;
+  left: 200px;
+  top: 70px;
+  width: calc(50% - 150px - 40px);
+}
+
+#main__Create {
+
+  padding: 10px;
+  border-radius: 8px;
+
+  background-color: #fff;
+}

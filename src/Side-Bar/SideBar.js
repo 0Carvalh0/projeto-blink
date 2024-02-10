@@ -1,6 +1,6 @@
 import React from "react";
 import "./SideBar.css";
-import Perfil001 from "../images/logo001-pequena.png";
+import Perfil001 from "../images/profile001.jpg";
 
 function SideBar() {
   return (

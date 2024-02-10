@@ -1,7 +1,7 @@
 import React from "react";
 import "./Header.css";
 import Logo001 from "../images/logo001-pequena.png";
-import Perfil001 from "../images/logo001-pequena.png";
+import Perfil001 from "../images/profile001.jpg";
 
 function Header() {
   return (
