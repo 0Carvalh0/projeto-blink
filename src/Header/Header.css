@@ -17,6 +17,10 @@ header img {
   width: 40px;
 }
 
+header img:hover {
+  cursor: pointer;
+}
+
 header #cantoEsquerdo {
   display: flex;
   align-items: center;
@@ -118,10 +122,11 @@ header .fa-solid {
 }
 
 header #cantoDireito .fa-solid:hover {
-  transform: scale(1.08);
+  transform: scale(1.1);
   color: var(--cor03);
 
   cursor: pointer;
+  transition: all ease 0.3s;
 }
 
 header .header__settings {
