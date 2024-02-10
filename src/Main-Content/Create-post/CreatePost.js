@@ -11,11 +11,11 @@ function CreatePost() {
       </div>
       <div className="main__Create__Content">
         <img id="perfil" src={Perfil001} />
-        <textarea id="descricao__Post" placeholder="O que você está pensando, PERFIL?" rows={5} maxLength={200}></textarea>
+        <textarea id="descricao__Post" placeholder="O que você está pensando, PERFIL?" rows={5} maxLength={200} />
       </div>
       <div className="main__Create__Footer">
         <div>
-          <input id="main__Create__fotos-videos" type="file" />
+          <input id="main__Create__fotos-videos" className="main__Create__Footer__botao" type="file" />
           <button className="main__Create__Footer__botao">
             <span className="fa-solid fa-face-smile" /> Sentimentos
           </button>
