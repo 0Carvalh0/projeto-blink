@@ -5,18 +5,22 @@ function CreatePost() {
   return (
     <div id="main__Create">
       <div className="main__Create__Header">
-        <p><span className="fa-solid fa-pencil" /> Fazer um post</p>
+        <p>
+          <span className="fa-solid fa-pencil" /> Fazer um post
+        </p>
       </div>
       <div className="main__Create__Content">
         <img id="perfil" src={Perfil001} />
-        <input
-          type="text"
-          placeholder="O que você está pensando, PERFIL"
-        ></input>
+        <textarea id="descricao__Post" placeholder="O que você está pensando, PERFIL?" rows={5} maxLength={200}></textarea>
       </div>
       <div className="main__Create__Footer">
-        <button><span className="fa-solid fa-image" /> Fotos/Vídeos</button>
-        <button><span className="fa-solid fa-face-smile" /> Sentimentos</button>
+        <div>
+          <input id="main__Create__fotos-videos" type="file" />
+          <button className="main__Create__Footer__botao">
+            <span className="fa-solid fa-face-smile" /> Sentimentos
+          </button>
+        </div>
+        <input type="submit" className="main__Create__Footer__botao" value={"Postar"} />
       </div>
     </div>
   );
