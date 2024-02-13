@@ -1,16 +1,22 @@
+/* MAIN CONTENT */
+
 main {
   position: absolute;
   left: 200px;
   top: 70px;
   width: calc(1000px - 150px - 40px);
+
+  z-index: 1;
 }
 
-#main__Create {
+#main__Create, #main__Post {
   padding: 10px;
   border-radius: 8px;
 
   background-color: #fff;
 }
+
+/* CREATE POST */
 
 .main__Create__Header {
   display: flex;
@@ -90,4 +96,26 @@ main {
   color: #fff;
 
   transition: all ease 0.3s;
+}
+
+/* POSTS */
+
+#main__Post {
+  margin-top: 10px;
+}
+
+#main__Post .post__Cabecalho {
+  display: flex;
+}
+
+#main__Post .post__Cabecalho > div {
+  margin-left: 10px;
+}
+
+#main__Post #post-Descricao {
+  margin: 10px 0px 0px 10px;
+}
+
+#main__Post #post-foto {
+  width: 100%;
 }
