@@ -14,6 +14,10 @@ function Post() {
       </div>
       <p id="post-Descricao">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste quis quas quasi, exercitationem eaque eligendi sed itaque, asperiores eius dolorem ab totam quam modi reprehenderit, neque unde enim! Quos officia necessitatibus ducimus eum facilis reiciendis nobis quas, deleniti iusto, sunt, sint tenetur eveniet consectetur nihil voluptates cupiditate exercitationem quia beatae dolores consequatur suscipit saepe unde. Earum porro nulla nostrum quam nesciunt adipisci dolorem, enim facere vitae expedita in dolor vel voluptate rem quas voluptatem necessitatibus a. Molestias alias consequatur quam atque aut eligendi facilis illum eum, fugiat, suscipit adipisci tempore labore perferendis quibusdam laudantium aliquid. Quasi quibusdam eaque minus vitae.</p>
       <img id="post-foto" src={foto001} />
+      <div className="post__Footer">
+        <div className="post__Gostei"><span className="fa-solid fa-thumbs-up" /></div>
+        <div className="post__Comentar"><span className="fa-solid fa-comment" /></div>
+      </div>
     </div>
   );
 }

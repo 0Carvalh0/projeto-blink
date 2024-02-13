@@ -119,3 +119,33 @@ main {
 #main__Post #post-foto {
   width: 100%;
 }
+
+#main__Post .post__Footer {
+  display: flex;
+  justify-content: space-around;
+}
+
+#main__Post .post__Footer .fa-solid {
+  color: var(--cor04);
+  font-size: 1.5rem;
+}
+
+#main__Post .post__Footer div {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 10px 0px;
+  width: 100%;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+#main__Post .post__Footer div.post__Gostei:hover::after {
+  content: "Curtir";
+  margin-left: 6px;
+}
+
+#main__Post .post__Footer div.post__Comentar:hover::after {
+  content: "Comentar";
+  margin-left: 6px;
+}
