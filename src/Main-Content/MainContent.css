@@ -9,7 +9,8 @@ main {
   z-index: 1;
 }
 
-#main__Create, #main__Post {
+#main__Create,
+#main__Post {
   padding: 10px;
   border-radius: 8px;
 
@@ -37,6 +38,7 @@ main {
 .main__Create__Header p:hover {
   transform: scale(1.05);
   color: black;
+  cursor: default;
 
   transition: all ease 0.3s;
 }
@@ -82,7 +84,8 @@ main {
   margin-right: 20px;
 }
 
-.main__Create__Footer .main__Create__Footer__botao, #file-upload-button {
+.main__Create__Footer .main__Create__Footer__botao,
+#file-upload-button {
   border: none;
   border-radius: 50px;
   padding: 10px 20px;
@@ -125,7 +128,8 @@ main {
   justify-content: space-around;
 }
 
-#main__Post .post__Footer .fa-solid {
+#main__Post .post__Footer .fa-solid,
+.fa-regular {
   color: var(--cor04);
   font-size: 1.5rem;
 }
