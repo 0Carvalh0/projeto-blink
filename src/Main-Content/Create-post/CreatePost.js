@@ -31,6 +31,7 @@ function CreatePost() {
         </div>
         <input
           type="submit"
+          id="btn__Postar"
           className="main__Create__Footer__botao"
           value={"Postar"}
         />

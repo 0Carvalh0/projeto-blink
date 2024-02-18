@@ -7,8 +7,6 @@ function MainContent() {
   return <main>
     <CreatePost />
     <Post />
-    <Post />
-    <Post />
   </main>
 }
 
