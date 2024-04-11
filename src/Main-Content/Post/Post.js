@@ -1,35 +1,23 @@
-import React, { useRef } from "react";
-import Perfil001 from "../../images/profile001.jpg";
+import React from "react";
 import foto001 from "../../images/facebook-app-interface(inspiração).jpg";
+import Perfil001 from "../../images/profile001.jpg";
 
 function Post() {
-  const btnGosteiRef = useRef(null);
-  const btnComentarRef = useRef(null);
-  let varGostei = 0;
-  let varComentei = 0;
+  const dataehora = document.getElementById("dataehora");
+  let horas = new Date().getHours();
+  let minutos = new Date().getMinutes();
+  let dia = new Date().getDay();
+  let mes = new Date().getMonth();
 
-  function deiGostei() {
-    if (varGostei === 0) {
-      btnGosteiRef.current?.classList.remove("fa-regular");
-      btnGosteiRef.current?.classList.add("fa-solid");
-      varGostei = 1;
-    } else {
-      btnGosteiRef.current?.classList.remove("fa-solid");
-      btnGosteiRef.current?.classList.add("fa-regular");
-      varGostei = 0;
+  function time() {
+    if (horas < 10) {
+      horas = "0" + horas;
     }
-  }
+    if (minutos < 10) {
+      minutos = "0" + minutos;
+    }
 
-  function Comentei() {
-    if (varComentei === 0) {
-      btnComentarRef.current?.classList.remove("fa-regular");
-      btnComentarRef.current?.classList.add("fa-solid");
-      varComentei = 1;
-    } else {
-      btnComentarRef.current?.classList.remove("fa-solid");
-      btnComentarRef.current?.classList.add("fa-regular");
-      varComentei = 0;
-    }
+    dataehora.innerHTML = `${dia}/${mes} ás ${horas}:${minutos}`;
   }
 
   return (
@@ -38,7 +26,7 @@ function Post() {
         <img id="perfil" src={Perfil001} />
         <div>
           <a href="#">[Perfil]</a>
-          <p>[Dia] ás [Horas]</p>
+          <p id="dataehora"></p>
         </div>
       </div>
       <p id="post-Descricao">
@@ -57,20 +45,10 @@ function Post() {
       <img id="post-foto" src={foto001} />
       <div className="post__Footer">
         <div className="post__Gostei">
-          <span
-            className="fa-regular fa-thumbs-up"
-            id="Gostei"
-            ref={btnGosteiRef}
-            onClick={deiGostei()}
-          />
+          <span className="fa-regular fa-thumbs-up" id="Gostei" />
         </div>
         <div className="post__Comentar">
-          <span
-            className="fa-regular fa-comment"
-            id="Comentar"
-            ref={btnComentarRef}
-            onClick={Comentei()}
-          />
+          <span className="fa-regular fa-comment" id="Comentar" />
         </div>
       </div>
     </div>
