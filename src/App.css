@@ -1,16 +1,19 @@
 :root {
-	--colorwhite: #F3D4B9;
-	--colorblack: #000;
-	--color01: #058DDE;
-	--color02: #0172CA;
-	--color03: #102E79;
-	--color04: #0F0B52;
-	--color05: #0d0a42;
+	--colorwhite: #FBFFFE;
+	--colorblack: #191919;
+	--color01: #F3D4B9;
+	--color02: #90F1EF;
+	--color03: #058DDE;
+	--color04: #454372;
+	--color05: #2F2963;
 }
 
 .App {
+    width: 100vw;
+	height: 100vh;
+
     display: flex;
     justify-content: center;
 
-    width: 100vw;
+	background-color: #d6d6d6;
 }
