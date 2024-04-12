@@ -26,6 +26,8 @@
     border-radius: 50%;
     
     transition: all ease .3s;
+
+    cursor: pointer;
 }
 
 .menu__Button:hover {
