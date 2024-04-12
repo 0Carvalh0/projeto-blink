@@ -1,10 +1,36 @@
-header {
+.toolBar {
+    position: fixed;
+    bottom: 0;
     width: 100vw;
-    height: 2rem;
+    height: 3rem;
+    z-index: 998;
 
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     
-    background-color: red;
+    background-color: var(--color03);
+}
+
+.aside__Button {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    transform: translateY(-50%);
+    z-index: 999;
+
+    color: var(--colorwhite);
+    background-color: var(--color03);
+    
+    border: none;
+    border-radius: 50%;
+    
+    transition: all ease .3s;
+}
+
+.aside__Button:hover {
+    background-color: var(--color01);
+    color: var(--color05);
+    box-shadow: 0 0 .5rem #00000060;
+    transform: translateY(-60%) scale(1.03);
 }

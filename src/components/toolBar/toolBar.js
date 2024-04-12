@@ -1,12 +1,13 @@
 import React from "react";
-import "./toolBar.css"
+import "./toolBar.css";
 
-function toolBar() {
-    return (
-    <header>
-        <h1>Teste React</h1>
-    </header>
-    )
+function ToolBar() {
+  return (
+    <aside className="toolBar">
+      <button className="fa-solid fa-house aside__Button"></button>
+      <button className="fa-solid fa-user aside__Button"></button>
+    </aside>
+  );
 }
 
-export default toolBar;
+export default ToolBar;

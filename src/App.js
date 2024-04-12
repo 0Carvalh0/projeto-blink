@@ -1,12 +1,12 @@
 import "./App.css";
-import login from "./components/login/login.js"
-import toolBar from "./components/toolBar/toolBar.js";
+import Login from "./components/login/login.js"
 import postGenerate from "./components/postGenerate/postGenerate.js"
+import ToolBar from "./components/toolBar/toolBar.js";
 
 function App() {
   return (
     <div className="App">
-      <toolBar />
+      <ToolBar />
     </div>
   );
 }
