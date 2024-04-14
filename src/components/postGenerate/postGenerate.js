@@ -8,14 +8,14 @@ function PostGenerate() {
 
   return (
     <form className="container__GeneratePost" onSubmit={post}>
-      <img className="main__profileImage" src={profile01}></img>
+      <img className="main__ProfileImage" src={profile01} alt="Profile Image"></img>
       <textarea className="main__Input" rows="5"></textarea>
       <label
         className="main__Button"
         id="input__AddImage"
-        for="input__SendImage"
+        htmlFor="input__SendImage"
       >
-        <i class="fa-solid fa-images"></i>
+        <i className="fa-solid fa-images"></i>
       </label>
       <input id="input__SendImage" className="hidden" type="file"></input>
       <button className="main__Button" type="submit">

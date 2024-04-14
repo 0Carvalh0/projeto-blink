@@ -13,7 +13,7 @@
     border-radius: 1rem;
 }
 
-.container__GeneratePost .main__profileImage {
+.container__GeneratePost .main__ProfileImage {
     position: absolute;
 
     transform: translate(10%, -50%);

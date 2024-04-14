@@ -1,0 +1,22 @@
+.container__Post {
+    margin-top: 2rem;
+    width: 90vw;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+
+    gap: 1rem;
+    padding: .5rem;
+
+    border: .1rem solid var(--colorblack);
+    border-radius: 1rem;
+}
+
+.container__Post .main__ProfileImage {
+    align-self: flex-start;
+}
+
+.main__PostImage {
+    width: 100%;
+}
