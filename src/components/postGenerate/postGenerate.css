@@ -47,7 +47,15 @@
     font-size: 1rem;
     text-transform: uppercase;
 
+    transition: all ease .3s;
+
     cursor: pointer;
+}
+
+.main__Button[type="submit"]:focus {
+    color: var(--colorwhite);
+    background-color: var(--color04);
+    border: .2rem solid var(--color03);
 }
 
 #input__AddImage {

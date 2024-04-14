@@ -2,8 +2,12 @@ import profile01 from "../../images/logo001-pequena.png";
 import "./postGenerate.css";
 
 function PostGenerate() {
+  function post(e) {
+    e.preventDefault();
+  }
+
   return (
-    <form className="container__GeneratePost">
+    <form className="container__GeneratePost" onSubmit={post}>
       <img className="main__profileImage" src={profile01}></img>
       <textarea className="main__Input" rows="5"></textarea>
       <label
