@@ -20,12 +20,7 @@ function PostContent() {
   return (
     <section className="container__Post">
       <img className="main__ProfileImage" src={profile01} alt="Profile Image" />
-      <p className="main__PostDescription">
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam excepturi
-        expedita, modi impedit quia fugiat necessitatibus neque exercitationem,
-        reprehenderit dicta veniam, voluptatibus autem ab. Velit nisi corporis
-        recusandae sed a.
-      </p>
+      <p className="main__PostDescription"></p>
       <img className="main__PostImage" src={postImage} alt="Post Image" />
       <button className="main__Button" id="btnLike" onClick={toggleLike}>
         <i className={`fa-${liked ? 'solid' : 'regular'} fa-thumbs-up`}></i> Gostei
