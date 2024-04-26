@@ -1,0 +1,12 @@
+@charset "UTF-8";
+@import "./reset.css";
+
+:root {
+	--colorwhite: #D6D6D6;
+	--colorblack: #191919;
+	--color01: #F3D4B9;
+	--color02: #90F1EF;
+	--color03: #058DDE;
+	--color04: #454372;
+	--color05: #2F2963;
+}
