@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import profile01 from "../../../../assets/logo001-pequena.png";
 import "./PostGenerate.css";
 
@@ -27,10 +27,7 @@ function PostGenerate() {
   }, []);
 
   return (
-    <form
-      className="app__GeneratePost"
-      onSubmit={(event) => event.preventDefault()}
-    >
+    <form className="app__GeneratePost">
       <img
         className="generatePost__ProfileImage"
         src={profile01}
